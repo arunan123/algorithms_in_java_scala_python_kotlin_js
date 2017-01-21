@@ -48,7 +48,8 @@ Algorithm Definition:
 Bubble Sort is a simple sorting algorithm, which will steep through a list of elements and compares two elements and swaps them if they are not in order, until no further swaps needed.
 
 Performance Review:
-This implementation has tested with the following data
+
+ This implementation has tested with the following data
 ----------------------------------------------------------------------
     Input     | Time taken in Milliseconds |Time taken in Nanoseconds
 ----------------------------------------------------------------------
