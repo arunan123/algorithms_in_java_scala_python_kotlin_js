@@ -21,25 +21,27 @@ This project is Migrated from sourceforge. It is 7 Year old project (https://sou
 3. Familiarity with GIT
 
 # For Every Java Implementation, follow this format:
-Add the following license details  in the header of the Java classes,
-/**
- * Copyright [2010] [Arunan R]
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * 
- * @author [Your Name]
- * @date   [Today's date]
- */
+Add the following license details  in the header of the Java classes,::
+    
+    
+    /**
+     * Copyright [2010] [Arunan R]
+     *
+     * Licensed under the Apache License, Version 2.0 (the "License");
+     * you may not use this file except in compliance with the License.
+     * You may obtain a copy of the License at
+     *
+     *     http://www.apache.org/licenses/LICENSE-2.0
+     *
+     * Unless required by applicable law or agreed to in writing, software
+     * distributed under the License is distributed on an "AS IS" BASIS,
+     * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     * See the License for the specific language governing permissions and
+     * limitations under the License.
+     * 
+     * @author [Your Name]
+     * @date   [Today's date]
+     */
 
 
 Also add a comment in the header which describes the algorithm and also add the performance details of your implementation in the following format, e.g.
