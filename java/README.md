@@ -45,33 +45,36 @@ Add the following license details  in the header of the Java classes,::
 
 
 Also add a comment in the header which describes the algorithm and also add the performance details of your implementation in the following format, e.g.
+::
 
-Algorithm Definition:
-Bubble Sort is a simple sorting algorithm, which will steep through a list of elements and compares two elements and swaps them if they are not in order, until no further swaps needed.
+    Algorithm Definition:
+    Bubble Sort is a simple sorting algorithm, which will steep through a list of elements and compares two elements and swaps      them if they are not in order, until no further swaps needed.
 
-Performance Review:
+    Performance Review:
 
- This implementation has tested with the following data
-----------------------------------------------------------------------
-    Input     | Time taken in Milliseconds |Time taken in Nanoseconds
-----------------------------------------------------------------------
-   Sequence   | 10 ms                      | 1200 ns
-   numbers    |                            |
-   from       |                            |
-   1 to 10000 |                            |
+    This implementation has tested with the following data
+    ----------------------------------------------------------------------
+        Input     | Time taken in Milliseconds |Time taken in Nanoseconds
+    ----------------------------------------------------------------------
+        Sequence   | 10 ms                      | 1200 ns
+        numbers    |                            |
+        from       |                            |
+        1 to 10000 |                            |
+
 If you are Implementing a Data Structure, please describe it and add the complexity for all operations.
 
-Example,
- * ------------------------------------------------------------------------
- * This is an implementation of a doubly linked list where it stores the 
- * elements in the Natural sorted order. Class didn't implement the List 
- * interface, since the elements inserted should be comparable
- * 
- * Adding an element    : Linear
- * Remove Max element   : Linear
- * Size of the LL       : Constant
- * Peek for Max element : Constant
- * ------------------------------------------------------------------------
+Example, ::
+
+     * ------------------------------------------------------------------------
+     * This is an implementation of a doubly linked list where it stores the 
+     * elements in the Natural sorted order. Class didn't implement the List 
+     * interface, since the elements inserted should be comparable
+     * 
+     * Adding an element    : Linear
+     * Remove Max element   : Linear
+     * Size of the LL       : Constant
+     * Peek for Max element : Constant
+     * ------------------------------------------------------------------------
 
 
 1. Write descriptive comment of your implementation.
@@ -88,3 +91,4 @@ E.g. If you write a compression algorithm then create a package,
 
 
 If you have any queries then feel free to write me arunan.healtheworld@gmail.com
+    
