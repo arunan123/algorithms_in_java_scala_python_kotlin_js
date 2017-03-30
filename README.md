@@ -9,8 +9,8 @@ As of now the languages supported are,
 If you want to add more languages please message me.
 
 # Features
-Reusable codes
-Tested the Algorithm implementations with different set of datas and provided the statistics in the header comment, so that developers can choose and reuse the algorithm which solve their business problem
+1. Reusable codes
+2. Tested the Algorithm implementations with different set of datas and provided the statistics in the header comment, so that developers can choose and reuse the algorithm which solve their business problem
 
 This project is Migrated from sourceforge. It is a 7 Year old project (https://sourceforge.net/projects/algorithmdb/)
 
