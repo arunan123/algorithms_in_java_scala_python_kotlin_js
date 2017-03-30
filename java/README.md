@@ -2,23 +2,23 @@
 The Aim of this project is to provide a collection of reusable Algorithms which can be used effectively in different scenarios.  Algorithm implementations are in Java. Objective here is to implement algorithms which should be more efficient than the JDK implementation and also to create a platform for the researchers who works on Data Mining, Encryption algorithms, ect.. to collaborate and contribute to this project.
 
 # Features
-Reusable codes
-Tested the Algorithm implementations with different set of datas and provided the statistics in the header comment, so that developers can choose and reuse the algorithm which solve their business problem
+1. Reusable codes
+2. Tested the Algorithm implementations with different set of datas and provided the statistics in the header comment, so that developers can choose and reuse the algorithm which solve their business problem
 
 This project is Migrated from sourceforge. It is 7 Year old project (https://sourceforge.net/projects/algorithmdb/)
 
 # For Developers who want to contribute to the project
 
 # Software Prerequisites 
-GIT client 
-JDK8
-JUnit 4
-An IDE (Eclipse or IntelliJ Idea)
+1. GIT client 
+2. JDK8
+3. JUnit 4
+4. An IDE (Eclipse or IntelliJ Idea)
 
 # Knowledge Prerequisites
-Sound knowledge in Core Java and OOPS
-Knowledge about writing JUnit test cases
-Familiarity with GIT
+1. Sound knowledge in Core Java and OOPS
+2. Knowledge about writing JUnit test cases
+3. Familiarity with GIT
 
 # For Every Java Implementation, follow this format:
 Add the following license details  in the header of the Java classes,
@@ -72,24 +72,16 @@ Example,
  * ------------------------------------------------------------------------
 
 
-Write descriptive comment of your implementation.
-If you are writing an algorithm, Implement the marker interface Algorithm in your implementation
-Implement the appropriate Existing interface in your implementation, if available.
-Add your Algorithm implementation in an appropriate category i.e.
-Appropriate package. If your algorithm category doesn’t exists then
-Create a package for that.
+1. Write descriptive comment of your implementation.
+2. If you are writing an algorithm, Implement the marker interface "Algorithm" in your implementation
+3. Implement the appropriate Existing interface in your implementation, if available.
+4. Add your Algorithm implementation in an appropriate category i.e. Appropriate package. If your algorithm category doesn’t exists then create a package for that.
 E.g. If you write a compression algorithm then create a package,
          com.algorithmdb.algorithms.compression inside the src folder;
         For writing the test case for the same algorithm create a package,
          com.algorithmdb.algorithms.compression.test inside the test folder
-Write JUNIT Test Case for your implementations and add that class in
-The appropriate package. While committing the source code, please commit both implementation and test cases.
-Please dont commit incomplete implementations. Commit only working code.
-Minimize the usage of Java APIs, so that we can measure the performance 
-without depending on the Java API implementations. If you want a Data 
-Structures then try to create a custom Data Structure Or use the existing DS in our repository.
-If you use the Java Data structure implementation then add that code in the repository inside the package with oracle license, Example, if you use BlockedDeque in your implementation (Get the BlockedDeque source code from Open JDK and add it in the below package)
-        com.openjdk.sourcecode
+5. Write JUNIT Test Case for your implementations and add that class in the appropriate package. While committing the source code, please commit both implementation and test cases.
+6. Please dont commit incomplete implementations. Commit only working code.
 
 
 
