@@ -13,7 +13,7 @@ This project is Migrated from sourceforge. It is 7 Year old project (https://sou
 GIT client 
 JDK8
 JUnit 4
-An IDE (Eclipse is preferable)
+An IDE (Eclipse or IntelliJ Idea)
 
 # Knowledge Prerequisites
 Sound knowledge in Core Java and OOPS
