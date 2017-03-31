@@ -1,5 +1,7 @@
 package com.algorithmdb.algorithms.sorting;
 
+import com.algorithmdb.util.StdRandom;
+
 /**
  * Copyright [2010] [Arunan R]
  *
@@ -27,9 +29,7 @@ package com.algorithmdb.algorithms.sorting;
  * This implementation has tested with the following datas 
  *    Input                                |    Avg Time taken in MS |  Avg Time taken in NS
  *    ---------------------------------------------------------------------------------------
- *    Sequence no from 1 to 10000          |    147 ms               |  153739672 ns
- *    Reverse sequence no from 10000 to 1  |    207 ms               |  186500402 ns
- *    10000 Random no                      |    165 ms               |  156548382 ns
+ *    10000 Random no                      |    14MS                 |  11815701NS
  *    ---------------------------------------------------------------------------------------
  *    
  * @author Arunan R
@@ -37,17 +37,18 @@ package com.algorithmdb.algorithms.sorting;
  * 
  */
 
-@SuppressWarnings("unchecked")
 public class QuickSort<T extends Comparable>
 extends Sort<T> {
 
 	@Override
 	public void sort(Comparable[] input) {
+        StdRandom.shuffle(input);
 		sort(input, 0, input.length-1);
 	}
 
 	private void sort(Comparable[] a, int lo, int hi) {
 	    if (hi <= lo) return;
+
 	    int j = partition(a, lo, hi);
 	    sort(a, lo, j-1);
 	    sort(a, j+1, hi);
@@ -59,9 +60,16 @@ extends Sort<T> {
 	    Comparable v = a[lo];
 
 	    while(true) {
-	        while (less(a[++i], v)) if (i == hi) break;
-            while (less(v, a[--j])) if (j == lo) break;
+	        while (less(a[++i], v)) {
+                if (i == hi) break;
+            }
+
+            while (less(v, a[--j])) {
+                if (j == lo) break;
+            }
+
             if(i >= j) break;
+
             exch(a, i, j);
         }
         exch(a, lo, j);

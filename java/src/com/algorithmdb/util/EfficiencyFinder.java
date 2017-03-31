@@ -61,7 +61,7 @@ implements AlgorithmConstants {
 	public static void main(String[] args) {
 		try {
 			EfficiencyFinder.printEfficiencyOfSortingAlgorithm(new QuickSort(),
-					new SortingTimeInNanoSeconds(), NumberGenerator.getSequenceNumbers(10000));
+					new SortingTimeInMilliSeconds(), NumberGenerator.getRandomNumbers(10000));
 		} catch (Exception e) {
 			e.printStackTrace();
 			e.printStackTrace();
