@@ -1,6 +1,6 @@
 package com.algorithmdb.algorithms.searching;
 
-import com.algorithmdb.algorithms.intf.Algorithm;
+import com.algorithmdb.intf.Algorithm;
 
 /**
  * 

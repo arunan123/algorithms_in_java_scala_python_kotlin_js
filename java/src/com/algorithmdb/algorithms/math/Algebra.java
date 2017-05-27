@@ -1,6 +1,6 @@
 package com.algorithmdb.algorithms.math;
 
-import com.algorithmdb.algorithms.intf.MathAlgorithm;
+import com.algorithmdb.intf.MathAlgorithm;
 
 import static java.lang.Math.*;
 

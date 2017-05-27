@@ -2,7 +2,7 @@ package com.algorithmdb.algorithms.math;
 
 import java.util.ArrayList;
 
-import com.algorithmdb.algorithms.intf.MathAlgorithm;
+import com.algorithmdb.intf.MathAlgorithm;
 
 
 /**

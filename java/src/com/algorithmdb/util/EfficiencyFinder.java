@@ -1,6 +1,6 @@
 package com.algorithmdb.util;
 
-import com.algorithmdb.algorithms.intf.AlgorithmConstants;
+import com.algorithmdb.intf.AlgorithmConstants;
 import com.algorithmdb.algorithms.sorting.QuickSort;
 import com.algorithmdb.algorithms.sorting.Sort;
 

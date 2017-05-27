@@ -1,6 +1,6 @@
 package com.algorithmdb.algorithms.sorting;
 
-import com.algorithmdb.algorithms.intf.Algorithm;
+import com.algorithmdb.intf.Algorithm;
 
 
 /**
