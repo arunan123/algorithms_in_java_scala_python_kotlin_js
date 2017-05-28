@@ -1,6 +1,8 @@
 package com.algorithmdb.algorithms.searching;
 
 
+import com.algorithmdb.intf.Algorithm;
+
 /**
  * Copyright [2010] [Arunan R]
  *
@@ -24,7 +26,7 @@ package com.algorithmdb.algorithms.searching;
  * 
  * Example:
  * 
- *       Wished number: 6 Sequence: 0-1-2-3-4-5-6-7-8-9-10 
+ *      number to find: 6 |Sequence:0-1-2-3-4-5-6-7-8-9-10
  *       										|
  *       										| 
  *       										6-7-8-9-10 
@@ -43,64 +45,38 @@ package com.algorithmdb.algorithms.searching;
  * @author Ivan Rodrigues
  * @date 26-Nov-2010
  */
-public class BinarySearch 
-extends Search {
+public class BinarySearch
+implements Algorithm {
 
 	/**
-	 * @param numbers<int[]>
-	 * @param number<int>
-	 * @return callback <boolean>
+	 * @param input int[]
+	 * @param key int
+	 * @return index of the key, if found or -1 if not found
 	 */
-	@Override
-	public boolean searchNumber(int[] numbers, int number) {
-		boolean callback = false;
+	public static int rank(int key, int[] input) {
+	    return rank(key, input, 0, input.length-1);
+    }
 
-		if (number > numbers[numbers.length - 1] || number < numbers[0])
-			return false;
+    private static int rank(int key, int[] input, int lo, int hi) {
+	    if (lo > hi) return -1;
 
-		// Verify if the number is equals zero
-		int pivot = numbers.length % 2 != 0 ? numbers.length / 2 : numbers.length / 2 - 1;
+	    int mid = lo + (hi-lo)/2;
 
-		if (numbers[pivot] == number)
-			return true;
+	    if (key < input[mid]) return rank(key, input, lo,mid-1);
+	    else if (key > input[mid]) return rank(key, input, mid+1, hi);
+	    else return mid;
+    }
 
-		if (number < numbers[pivot])
-			numbers = this.getNumbers(numbers, pivot,true);
-		else
-			numbers = this.getNumbers(numbers, pivot,false);
-		// if the number not find then do call recursive
-		if (!callback)
-			callback = searchNumber(numbers, number);
+    /*
+    public static void main(String...args) {
+	    int[] input = {1,3,5,11,15,16,17,18,19,20,26,29,30,32};
+	    int keyfound = rank(10,input);
 
-		return callback;
-	}
-	
-	
-	/**
-	 * Return a new array of int without numbers that was cut by binary search.
-	 * If order it's true cut the array of position 0 to pivot -1. If false
-	 * cut the array of position pivot + 1 to numbers.length -1 
-	 * 
-	 * @param numbers<int[]>
-	 * @param pivot<int>
-	 * @param cut <boolean> 
-	 * 
-	 * @return callback<int[]>
-	 */
-	private int[] getNumbers(int[] numbers, int pivot, boolean cut){
-		int[] callback = null;
-		if(cut){
-			callback = new int[pivot];
-			for(int i = 0; i < callback.length; i++){
-				callback[i] = numbers[i];
-			}
-		}
-		else{
-			callback = new int[(numbers.length -1) - pivot];
-			for(int i = 0; i < callback.length; i++){
-				callback[i] = numbers[pivot++ + 1];
-			}
-		}
-		return callback;
-	}
+	    if (keyfound == -1) {
+	        System.out.println("Key not found");
+        } else {
+	        System.out.println(input[keyfound] + " is found");
+        }
+    }
+    */
 }
