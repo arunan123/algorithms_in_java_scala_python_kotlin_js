@@ -1,5 +1,7 @@
 package com.algorithmdb.algorithms.math;
 
+import com.algorithmdb.datastructures.Stack;
+
 /**
  *
  * Copyright [2010] [Arunan R]
@@ -36,4 +38,103 @@ public class Maths {
         }
         return true;
     }
+
+    /**
+     * Method to evaluate an expression.
+     * Used Dijstra's Two stack algorithm for evaluating an expression.
+     *
+     * Example expression input = (((2+3)*4)+6)
+     * @param expression
+     * @return long , value after resolving the expression.
+     */
+    public static long evaluateExpression(String expression) throws Exception {
+        boolean isBalanced = isExpressionBalanced(expression);
+        if (!isBalanced) {
+            throw new Exception("Expression is not balanced!");
+        }
+
+        Stack<Character> operatorStack = new Stack<>(10);
+        Stack<Long> valueStack = new Stack<>(10);
+
+        char[] charArray = expression.toCharArray();
+        boolean isPrevCharisInteger = false;
+        String accumulatedChar = null;
+        for (Character c: charArray) {
+            if (c == '(')  {
+                isPrevCharisInteger = false;
+                if(accumulatedChar != null) {
+                    valueStack.push(Long.parseLong(accumulatedChar));
+                    accumulatedChar = null;
+                }
+                continue;
+            }
+            else if (c == '*' || c == '+' || c == '/' || c == '-') {
+                isPrevCharisInteger = false;
+                operatorStack.push(c);
+                if(accumulatedChar != null) {
+                    valueStack.push(Long.parseLong(accumulatedChar));
+                    accumulatedChar = null;
+                }
+            }
+            else if (c == '0' || c == '1' || c == '2' || c == '3' ||
+                    c == '4' || c == '5' || c == '6' || c == '7' ||
+                    c == '8' || c == '9') {
+                boolean isCurrentCharInteger = true;
+                if(isPrevCharisInteger) {
+                    accumulatedChar += Character.toString(c);
+                } else if (isCurrentCharInteger){
+                    accumulatedChar = "";
+                    accumulatedChar += Character.toString(c);
+                }
+                isPrevCharisInteger = true;
+            } else if (c == ')') {
+                isPrevCharisInteger = false;
+                if(accumulatedChar != null) {
+                    valueStack.push(Long.parseLong(accumulatedChar));
+                    accumulatedChar = null;
+                }
+                try {
+                    Character ch = operatorStack.pop();
+                    Long valueOne = valueStack.pop();
+                    Long valueTwo = valueStack.pop();
+                    if (ch == '+') {
+                        valueStack.push(valueTwo + valueOne);
+                    } else if (ch == '-') {
+                        valueStack.push(valueTwo - valueOne);
+                    } else if (ch == '*') {
+                        valueStack.push(valueTwo * valueOne);
+                    } else if (ch == '/') {
+                        valueStack.push(valueTwo / valueOne);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return valueStack.pop();
+    }
+
+    private static boolean isExpressionBalanced(String expression) {
+        Stack<Character> expressionStack = new Stack<>(10);
+        char[] chararray = expression.toCharArray();
+        for (Character c : chararray) {
+            if (c == '(') {
+                expressionStack.push(c);
+            } else if (c == ')') {
+                try {
+                    expressionStack.pop();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        if (expressionStack.size() == 0) return true;
+        else return false;
+    }
+
+//    public static void main(String...args) throws Exception {
+//        String expression = "(((2+3)*4)+10)";
+//        long result = evaluateExpression(expression);
+//        System.out.println("Expression evaluated and the result is : " + result);
+//    }
 }
