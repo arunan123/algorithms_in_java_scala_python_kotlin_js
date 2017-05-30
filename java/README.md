@@ -21,11 +21,12 @@ This project is Migrated from sourceforge. It is 7 Year old project (https://sou
 3. Familiarity with GIT
 
 # For Every Java Implementation, follow this format:
+
 Add the following license details  in the header of the Java classes,::
     
     
     /**
-     * Copyright [2010] [Arunan R]
+     * Copyright [2017] [Arunan R]
      *
      * Licensed under the Apache License, Version 2.0 (the "License");
      * you may not use this file except in compliance with the License.

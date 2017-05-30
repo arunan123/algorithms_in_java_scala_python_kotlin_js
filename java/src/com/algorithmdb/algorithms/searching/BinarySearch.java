@@ -4,7 +4,7 @@ package com.algorithmdb.algorithms.searching;
 import com.algorithmdb.intf.Algorithm;
 
 /**
- * Copyright [2010] [Arunan R]
+ * Copyright [2017] [Arunan R]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
