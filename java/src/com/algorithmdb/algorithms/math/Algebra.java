@@ -37,24 +37,15 @@ implements MathAlgorithm{
 	 * Implementation of Euclid algorithm to 
 	 * find the greatest common divisor
 	 * 
-	 * @param x
-	 * @param y
+	 * @param p
+	 * @param q
 	 * @return y <int>
 	 */
-	public static int greatestCommonDivisor(int x, int y)
-	{
-		int z;
-		while(x > 0)
-		{
-			if (y > x)
-			{
-				z = x;
-				x = y;
-				y = z;
-			}
-			x -= y;
-		}
-		return y;
+	public static int gcd(int p, int q) {
+		if (q==0) return p;
+
+		int r = p % q;
+		return gcd(q, r);
 	}
 	
 	/**
