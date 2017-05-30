@@ -3,7 +3,7 @@ package com.algorithmdb.algorithms.sorting;
 import com.algorithmdb.util.StdRandom;
 
 /**
- * Copyright [2010] [Arunan R]
+ * Copyright [2017] [Arunan R]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
