@@ -57,8 +57,13 @@ public class Maths {
         Stack<Long> valueStack = new Stack<>(10);
 
         char[] charArray = expression.toCharArray();
+        /* This boolean and string is introduced because, once we convert an expression into a character
+           array, two digit or three digit numbers will be converted into characters. To accumulate
+           those characters and to evaluate the expression we introduced the following 2 variables
+        */
         boolean isPrevCharisInteger = false;
         String accumulatedChar = null;
+
         for (Character c: charArray) {
             if (c == '(')  {
                 isPrevCharisInteger = false;
