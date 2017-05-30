@@ -21,7 +21,7 @@ public class AlgebraTest {
 	@Test
 	public void testGreatestCommonDivisor() {
 		int expected = 1;
-		int actual = greatestCommonDivisor(5, 6);
+		int actual = gcd(5, 6);
 		assertEquals(expected, actual);
 	}
 	
