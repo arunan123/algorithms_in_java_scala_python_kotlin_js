@@ -23,8 +23,8 @@ public class GCD {
     /**
      * Implementation of Eclid's algorithm
      *
-     * @param p
-     * @param q
+     * @param p, first number to compute gcd
+     * @param q, second number to compute gcd
      * @return gcd
      */
     public static int gcd(int p, int q) {

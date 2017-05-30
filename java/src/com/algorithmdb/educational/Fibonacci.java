@@ -34,6 +34,13 @@ public class Fibonacci {
     }
     */
 
+    /**
+     * If we give a number N, it will compute the Fibonacci numbers
+     * from 0 to N and store it in an array and return back the array.
+     *
+     * @param N
+     * @return Array of Fibonacci numbers
+     */
     public static Long[] fibonacci(int N) {
         Long[] values = new Long[N+1];
         values[0] = 0L;
