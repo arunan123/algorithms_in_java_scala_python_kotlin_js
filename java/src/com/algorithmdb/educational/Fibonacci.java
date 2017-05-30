@@ -34,7 +34,14 @@ public class Fibonacci {
     }
     */
 
-    private static Long[] F(int N) {
+    /**
+     * If we give a number N, it will compute the Fibonacci numbers
+     * from 0 to N and store it in an array and return back the array.
+     *
+     * @param N
+     * @return Array of Fibonacci numbers
+     */
+    public static Long[] fibonacci(int N) {
         Long[] values = new Long[N+1];
         values[0] = 0L;
         values[1] = 1L;
@@ -46,7 +53,7 @@ public class Fibonacci {
 
     public static void main(String...args) {
         int until=50;
-        Long[] result = F(until);
+        Long[] result = fibonacci(until);
         for (int i=0; i<=until; i++) {
             System.out.println(i+ " " + result[i]);
         }
