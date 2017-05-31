@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import com.algorithmdb.util.math.Matrix;
+import com.algorithmdb.math.Matrix;
 
 public class MatrixTest {
 

@@ -1,4 +1,4 @@
-package com.algorithmdb.util.math.exceptions;
+package com.algorithmdb.exceptions;
 
 
 /**
