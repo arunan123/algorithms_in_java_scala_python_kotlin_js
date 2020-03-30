@@ -16,29 +16,16 @@ package com.algorithmdb.educational;
  * limitations under the License.
  *
  * @author Arunan R
- * @date   May 28, 2017
+ * @since   May 28, 2017
  *
  */
 public class Fibonacci {
-
-    /* Recursive way of solving the Fibonacci, but inefficient.
-    public static long F(int N) {
-        if (N==0) return 0;
-        if (N==1) return 1;
-        return F(N-1) + F(N-2);
-    }
-    public static void main(String[] args) {
-        for (int N=0; N<100; N++) {
-            System.out.println(N + " " + F(N));
-        }
-    }
-    */
 
     /**
      * If we give a number N, it will compute the Fibonacci numbers
      * from 0 to N and store it in an array and return back the array.
      *
-     * @param N
+     * @param N until which number to calculate Fibonacci
      * @return Array of Fibonacci numbers
      */
     public static Long[] fibonacci(int N) {
