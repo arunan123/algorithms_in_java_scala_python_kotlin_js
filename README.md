@@ -3,8 +3,9 @@ The Aim of this project is to provide a collection of reusable Algorithms which 
 
 As of now the languages supported are,
 1. Java
-2. JavaScript
-3. Scala
+2. Python
+3. JavaScript
+4. Scala
 
 If you want to add more languages please message me.
 
