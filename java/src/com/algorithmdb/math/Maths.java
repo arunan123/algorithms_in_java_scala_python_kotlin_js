@@ -1,4 +1,4 @@
-package com.algorithmdb.algorithms.math;
+package com.algorithmdb.math;
 
 import com.algorithmdb.datastructures.Stack;
 

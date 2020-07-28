@@ -1,12 +1,12 @@
-package com.algorithmdb.algorithms.math.test;
+package com.algorithmdb.math.test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import static com.algorithmdb.algorithms.math.Algebra.*;
+import static com.algorithmdb.math.Algebra.*;
 
-import com.algorithmdb.util.math.exceptions.ImaginaryNumberException;
+import com.algorithmdb.exceptions.ImaginaryNumberException;
 
 /**
  * 

@@ -1,12 +1,11 @@
-package com.algorithmdb.algorithms.math.test;
+package com.algorithmdb.math.test;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 
+import com.algorithmdb.math.Statistics;
 import org.junit.Test;
-
-import com.algorithmdb.algorithms.math.Statistics;
 
 /**
  * 

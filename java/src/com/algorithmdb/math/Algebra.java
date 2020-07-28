@@ -1,10 +1,10 @@
-package com.algorithmdb.algorithms.math;
+package com.algorithmdb.math;
 
 import com.algorithmdb.intf.MathAlgorithm;
 
 import static java.lang.Math.*;
 
-import com.algorithmdb.util.math.exceptions.ImaginaryNumberException;
+import com.algorithmdb.exceptions.ImaginaryNumberException;
 
 /**
  *
