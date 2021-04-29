@@ -1,4 +1,4 @@
-# Algorithms-and-datastructures-implementation-in-java-javascript-scala
+# Algorithms-and-datastructures-implementation-in-java-javascript-scala-python-kotlin
 The Aim of this project is to provide a collection of reusable Algorithms which can be used effectively in different scenarios. Objective here is to create a platform for the researchers who works on Data Mining, Encryption algorithms, ect.. It can also be used for Educational purposes.
 
 As of now the languages supported are,
