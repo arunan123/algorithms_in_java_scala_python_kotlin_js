@@ -1,5 +1,5 @@
 # Algorithms-and-datastructures-implementation-in-java-javascript-scala-python-kotlin
-The Aim of this project is to provide a collection of reusable Algorithms which can be used effectively in different scenarios.
+The Aim of this project is to provide a collection of reusable Algorithms implemented in various languages. This repository is meant to be a centralized place for algorithms.
 
 As of now the languages supported are,
 1. Java
