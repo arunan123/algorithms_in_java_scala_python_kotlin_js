@@ -1,18 +1,13 @@
-package com.algorithmdb.algorithms.sorting.test;
-
-/**
- * @author Arunan R
- * @date   18 March, 2013
- * 
- * Test class for BubbleSort
- * 
- */
+package com.algorithmdb.algorithms.sorting;
 
 import static org.junit.Assert.assertArrayEquals;
-import org.junit.Test;
-import com.algorithmdb.algorithms.sorting.ShellSort;
 
-public class TestShellSort {
+import org.junit.Test;
+
+import com.algorithmdb.algorithms.sorting.MergeSort;
+
+public class TestMergeSort {
+
 	Integer[] unSortedNumbers = {50,87,5,2,1000,9,23,90,8,32,1,23,18,100,11,980};
 	Integer[] expectedSortedNumbers  = {1,2,5,8,9,11,18,23,23,32,50,87,90,100,980,1000};
 	
@@ -21,14 +16,14 @@ public class TestShellSort {
 	String[] expectedSortedStrings = {"Abi","Albert","Anbarasan","Arunan","Bharath","Hedbert","Jack",
 			 "Richard","Selva","Venkat","Vijay","bala","jagan","stephen"};
 	@Test
-	public void testIntegerSort() {
-		new ShellSort<Integer>().sort(unSortedNumbers);
+	public void testIntegerSorting() {
+		new MergeSort<Integer>().sort(unSortedNumbers);
 		assertArrayEquals(expectedSortedNumbers, unSortedNumbers);
 	}
-
+	
 	@Test
-	public void testStringSort() {
-		new ShellSort<String>().sort(unSortedStrings);
+	public void testStringSorting() {
+		new MergeSort<String>().sort(unSortedStrings);
 		assertArrayEquals(expectedSortedStrings, unSortedStrings);
 	}
 }

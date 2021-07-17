@@ -1,4 +1,4 @@
-package com.algorithmdb.util.math.test;
+package com.algorithmdb.util.math;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertFalse;

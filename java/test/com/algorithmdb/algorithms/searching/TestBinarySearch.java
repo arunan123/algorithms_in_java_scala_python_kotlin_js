@@ -1,11 +1,11 @@
-package com.algorithmdb.algorithms.searching.test;
+package com.algorithmdb.algorithms.searching;
 
-/**
- * @author Arunan R
+/*
+  @author Arunan R
  * @date   26 Dec, 2010
- * 
+ *
  * Test class for BinarySearch class
- * 
+
  */
 import org.junit.Test;
 import static org.junit.Assert.*;

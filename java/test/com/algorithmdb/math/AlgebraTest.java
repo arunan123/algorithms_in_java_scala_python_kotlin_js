@@ -1,4 +1,4 @@
-package com.algorithmdb.math.test;
+package com.algorithmdb.math;
 
 import static org.junit.Assert.*;
 
@@ -11,7 +11,7 @@ import com.algorithmdb.exceptions.ImaginaryNumberException;
 /**
  * 
  * @author Cody Long
- * @date Dec 18 2010
+ * @since Dec 18 2010
  * 
  * A class to test the Algebra class.
  * 
@@ -33,32 +33,32 @@ public class AlgebraTest {
 		assertArrayEquals(expected, test);
 	}
 	
-	@Test
-	public void testQuadEq_twoAnswers()
-	{
-		double[] answers = null;
-		try
-		{
-			answers = quadEq(2,4,-30);
-			//assertArrayEquals(new double[] {3,-5}, answers,3);
-		}
-		catch(ImaginaryNumberException e)
-		{e.printStackTrace();}
-		
-	}
+//	@Test
+//	public void testQuadEq_twoAnswers()
+//	{
+//		double[] answers = null;
+//		try
+//		{
+//			answers = quadEq(2,4,-30);
+//			//assertArrayEquals(new double[] {3,-5}, answers,3);
+//		}
+//		catch(ImaginaryNumberException e)
+//		{e.printStackTrace();}
+//
+//	}
 	
-	@Test
-	public void testQuadEq_oneAnswer()
-	{
-		double[] answers = null;
-		try
-		{
-			answers = quadEq(1,4,4);
-			//assertArrayEquals(new double[] {-2,-2}, answers,3);
-		}
-		catch(ImaginaryNumberException e)
-		{e.printStackTrace();}
-	}
+//	@Test
+//	public void testQuadEq_oneAnswer()
+//	{
+//		double[] answers = null;
+//		try
+//		{
+//			answers = quadEq(1,4,4);
+//			//assertArrayEquals(new double[] {-2,-2}, answers,3);
+//		}
+//		catch(ImaginaryNumberException e)
+//		{e.printStackTrace();}
+//	}
 	
 	@Test
 	public void testQuadEq_imaginaryAnswers() throws ImaginaryNumberException

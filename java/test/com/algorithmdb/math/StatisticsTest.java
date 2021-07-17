@@ -1,4 +1,4 @@
-package com.algorithmdb.math.test;
+package com.algorithmdb.math;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,7 +10,7 @@ import org.junit.Test;
 /**
  * 
  * @author Cody Long
- * @date Dec 16 2010
+ * @since  Dec 16 2010
  * 
  * A class which tests the abstract class Statistics.
  *
@@ -26,7 +26,7 @@ public class StatisticsTest {
 
 	@Test
 	public void testStandardDeviationArrayListOfInteger() {
-		ArrayList<Integer> a = new ArrayList<Integer>();
+		ArrayList<Integer> a = new ArrayList<>();
 		a.add(1);
 		a.add(3);
 		a.add(4);
