@@ -1,4 +1,4 @@
-package com.algorithmdb.educational;
+package com.algorithmdb.math;
 
 /**
  * Copyright [2021] [Arunan R]
@@ -23,7 +23,7 @@ package com.algorithmdb.educational;
  * ----------------------------------------------------------------------------------
  *
  * @author Arunan R
- * @date   July 17, 2021
+ * @since  July 17, 2021
  */
 public class CountDigit {
     public int countDigits(int number) {

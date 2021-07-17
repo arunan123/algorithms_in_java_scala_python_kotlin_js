@@ -1,4 +1,4 @@
-package com.algorithmdb.interviewproblems;
+package com.algorithmdb.math;
 
 /**
  * Copyright [2021] [Arunan R]
