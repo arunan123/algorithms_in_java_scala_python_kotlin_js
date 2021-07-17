@@ -5,8 +5,6 @@ As of now the languages supported are,
 1. Java
 2. Python
 3. JavaScript
-4. Scala
-5. Kotlin
 
 As of now most of the implementations are in Java, Python and Javascript. Need Kotlin and scala developers.
 
