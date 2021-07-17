@@ -1,11 +1,11 @@
-package com.algorithmdb.algorithms.sorting.test;
+package com.algorithmdb.algorithms.sorting;
 
-/**
- * @author Arunan R
+/*
+  @author Arunan R
  * @date   21 Nov, 2010
- * 
+ *
  * Test class for BubbleSort
- * 
+
  */
 import static org.junit.Assert.*;
 
