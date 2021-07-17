@@ -1,5 +1,5 @@
 # Algorithms-and-datastructures-implementation-in-java-javascript-scala-python-kotlin
-The Aim of this project is to provide a collection of reusable Algorithms which can be used effectively in different scenarios. It is purely used for Educational purposes.
+The Aim of this project is to provide a collection of reusable Algorithms which can be used effectively in different scenarios.
 
 As of now the languages supported are,
 1. Java
@@ -7,6 +7,8 @@ As of now the languages supported are,
 3. JavaScript
 4. Scala
 5. Kotlin
+
+As of now most of the implementations are in Java, Python and Javascript. Need Kotlin and scala developers.
 
 If you want to add more languages please message me.
 
