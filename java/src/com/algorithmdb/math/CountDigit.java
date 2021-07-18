@@ -16,9 +16,8 @@ package com.algorithmdb.math;
  * limitations under the License.
  *
  * -----------------------------------------------------------------------------------
- * Note : This can be used for EDUCATIONAL purpose.
  *
- * Algorithm Definition : Count the number of digits
+ * Algorithm Definition : Count the number of digits in a given number
  *
  * ----------------------------------------------------------------------------------
  *
