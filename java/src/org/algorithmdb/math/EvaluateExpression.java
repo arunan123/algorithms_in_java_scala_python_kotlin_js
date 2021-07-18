@@ -18,33 +18,19 @@ import org.algorithmdb.datastructures.Stack;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * A class that contains basic mathematical operations
+ * A class that contains method to evaluate an expression like ((2*3)+5+(5*6))
  *
  * @author Arunan Ramanathan
- * @date May 30 2017
+ * @since May 30 2017
  */
-public class Maths {
-
-    /**
-     * Method to find whether the given number is Prime or Not!
-     *
-     * @param number to find out Prime or Not
-     * @return boolean, true if Prime, false if Not a Prime.
-     */
-    public static boolean isPrime(long number) {
-        long half = number/2;
-        for (long i=2; i<=half; i++) {
-            if (number % i == 0) return false;
-        }
-        return true;
-    }
+public class EvaluateExpression {
 
     /**
      * Method to evaluate an expression.
      * Used Dijstra's Two stack algorithm for evaluating an expression.
      *
      * Example expression input = (((2+3)*4)+6)
-     * @param expression
+     * @param expression an expression as showed above
      * @return long , value after resolving the expression.
      */
     public static long evaluateExpression(String expression) throws Exception {
@@ -133,8 +119,7 @@ public class Maths {
                 }
             }
         }
-        if (expressionStack.size() == 0) return true;
-        else return false;
+        return expressionStack.size() == 0;
     }
 
 //    public static void main(String...args) throws Exception {
