@@ -27,16 +27,19 @@ public class Gcd {
      * @param q, second number to compute gcd
      * @return gcd
      */
-    public static int gcd(int p, int q) {
+    public int gcd(int p, int q) {
         if (q==0) return p;
 
-        int r = p % q;
-        return gcd(q, r);
+        return gcd(q, p % q);
     }
 
-    /*
-    public static void main(String...args) {
-        System.out.println(gcd(1111111,1234567));
+    public int lcm(int p, int q) {
+        return (p*q)/gcd(p,q);
     }
-    */
+
+
+    public static void main(String...args) {
+        System.out.println(new Gcd().gcd(1111111,1234567));
+        System.out.println(new Gcd().lcm(4,6));
+    }
 }
