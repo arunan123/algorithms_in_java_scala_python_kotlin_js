@@ -1,4 +1,4 @@
-package com.algorithmdb.educational;
+package com.algorithmdb.math;
 
 /**
  * Copyright [2017] [Arunan R]

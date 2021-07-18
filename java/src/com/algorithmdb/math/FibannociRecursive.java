@@ -1,7 +1,7 @@
-package com.algorithmdb.educational;
+package com.algorithmdb.math;
 
 /**
- * Copyright [2017] [Arunan R]
+ * Copyright [2020] [Arunan R]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,27 +16,21 @@ package com.algorithmdb.educational;
  * limitations under the License.
  *
  * @author Arunan R
- * @date   May 29, 2017
+ * @since   May 30, 2020
  *
  */
-public class GCD {
-    /**
-     * Implementation of Eclid's algorithm
-     *
-     * @param p, first number to compute gcd
-     * @param q, second number to compute gcd
-     * @return gcd
-     */
-    public static int gcd(int p, int q) {
-        if (q==0) return p;
+public class FibannociRecursive {
 
-        int r = p % q;
-        return gcd(q, r);
+    // Recursive way of solving the Fibonacci, but inefficient.
+    public static long F(int N) {
+        if (N==0) return 0;
+        if (N==1) return 1;
+        return F(N-1) + F(N-2);
+    }
+    public static void main(String[] args) {
+        for (int N=0; N<100; N++) {
+            System.out.println(N + " " + F(N));
+        }
     }
 
-    /*
-    public static void main(String...args) {
-        System.out.println(gcd(1111111,1234567));
-    }
-    */
 }
