@@ -1,5 +1,7 @@
 package org.algorithmdb.datastructures.arrays;
 
+import java.util.Arrays;
+
 /**
  * Given an integer array A of size N and an integer B, you have to return the same array after rotating it B times
  * towards the right.
@@ -66,5 +68,11 @@ public class RotateArrayNTimes {
         int temp = A[i];
         A[i] = A[j];
         A[j] = temp;
+    }
+
+    public static void main(String[] args) {
+        int[] a = {4,2,9};
+        new RotateArrayNTimes().rotate(a,2);
+        Arrays.stream(a).forEach(t -> System.out.println(t + " "));
     }
 }
