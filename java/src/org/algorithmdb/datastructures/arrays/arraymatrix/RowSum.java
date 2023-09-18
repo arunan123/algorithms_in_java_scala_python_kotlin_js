@@ -46,21 +46,22 @@ import java.util.Arrays;
 
 public class RowSum {
     public int[] solve(int[][] A) {
-        int colLength = A[0].length;
-        int[] result = new int[A.length];
-        for (int j=0; j<A.length; j++) {
+        int N = A.length;
+        int M = A[0].length;
+        int[] result = new int[N];
+        for (int i=0; i<N; i++) {
             int sum = 0;
-            for (int i=0; i<colLength; i++) {
-                sum = sum + A[j][i];
+            for (int j=0; j<M; j++) {
+                sum = sum + A[i][j];
             }
-            result[j] = sum;
+            result[i] = sum;
         }
         return result;
     }
 
     public static void main(String[] args) {
         int[][] input = {{1,2,3,4},{5,6,7,8},{9,2,3,4}};
-        int[] result = new ColumnSum().solve(input);
+        int[] result = new RowSum().solve(input);
         Arrays.stream(result).forEach(t -> System.out.print(t + " "));
     }
 }

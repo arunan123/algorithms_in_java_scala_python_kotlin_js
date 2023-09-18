@@ -51,14 +51,15 @@ import java.util.Arrays;
  */
 public class ColumnSum {
     public int[] solve(int[][] A) {
-        int colLength = A[0].length;
-        int[] result = new int[colLength];
-        for (int j=0; j<A.length; j++) {
+        int N = A.length;
+        int M = A[0].length;
+        int[] result = new int[M];
+        for (int i=0; i<M; i++) {
             int sum = 0;
-            for (int i=0; i<colLength; i++) {
-                sum = sum + A[j][i];
+            for (int j=0; j<N; j++) {
+                sum = sum+ A[j][i];
             }
-            result[j] = sum;
+            result[i] = sum;
         }
         return result;
     }
